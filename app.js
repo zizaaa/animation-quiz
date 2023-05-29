@@ -8,9 +8,8 @@ const replay = document.querySelector('.replay-btn');
 
 const percentage = document.querySelector(':root');
 
-const play=()=>{
-    document.getElementById('playBtn').innerHTML = '<i class="fa-solid fa-pause"></i>';
-
+const animation = ()=>{
+    
     headLine_1.style = 'animation: slideRight 1s forwards;';
     female.style = 'animation: femaleImg 1s ease-in-out forwards;';
     percentage.style.setProperty('--loaderPercent','5%');
@@ -39,9 +38,19 @@ const play=()=>{
     setTimeout(()=>{
         replay.style = 'animation: replay 1s forwards; display:block;';
         percentage.style.setProperty('--loaderPercent','100%');
-        document.getElementById('playBtn').innerHTML = '<i class="fa-solid fa-play"></i>';
+        document.getElementById('playBtn').innerHTML = '<i class="fa-solid fa-play" onclick="play()"></i>';
     },5500);
+}
 
+const play=()=>{
+    document.getElementById('playBtn').innerHTML = '<i class="fa-solid fa-stop" onclick="stop()"></i>';
+    headline_2.style = 'display:none;';
+    subHeadLine.style = 'display:none;';
+    learMore_btn.style = 'display:none;';
+    logo.style = 'display:none;';
+    replay.style = 'display:none;';
+
+    animation();
 };
 
 
@@ -55,6 +64,12 @@ const repeat=()=>{
     play();
 }
 
-// const stop=()=>{
-//     document.getElementById('playBtn').innerHTML = '<i class="fa-solid fa-play" onclick="play()"></i>';
-// }
+const stop=()=>{
+    document.getElementById('playBtn').innerHTML = '<i class="fa-solid fa-play" onclick="play()"></i>';
+
+    headline_2.style = 'display:none;';
+    subHeadLine.style = 'display:none;';
+    learMore_btn.style = 'display:none;';
+    logo.style = 'display:none;';
+    replay.style = 'display:none;';
+}
