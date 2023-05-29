@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="female-img">
+            <img src="./assets/female.png" alt="">
+        </div>
+        <div class="headline-1 ">
+            <img src="./assets/headline1.png" alt="">
+        </div>
+        <div class="headline-2">
+            <img src="./assets/headline2.png" alt="">
+        </div>
+        <div class="logo-container">
+            <img src="./assets/logo.png" alt="">
+        </div>
+        <div class="subHeadline">
+            <img src="./assets/subheadline.png" alt="">
+        </div>
+        <div class="learMore-btn">
+            <img src="./assets/learnmore.png" alt="">
+        </div>
+        <div class="replay-btn">
+            <img src="./assets/replay.png" onclick="repeat()" alt="">
+        </div>
+    </div>
+    <div class="loader">
+        <button type="button" id="playBtn"><i class="fa-solid fa-play" onclick="play()"></i></button>
+        <div class="percentage">
+            <span id="percentageCounter"></span>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
