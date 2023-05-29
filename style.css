@@ -175,6 +175,9 @@ body{
     background-color: transparent;
     border: none;
 }
+.loader button i{
+    cursor: pointer;
+}
 .percentage{
     height: 10px;
     width: 100%;

@@ -39,6 +39,7 @@ const play=()=>{
     setTimeout(()=>{
         replay.style = 'animation: replay 1s forwards; display:block;';
         percentage.style.setProperty('--loaderPercent','100%');
+        document.getElementById('playBtn').innerHTML = '<i class="fa-solid fa-play"></i>';
     },5500);
 
 };
